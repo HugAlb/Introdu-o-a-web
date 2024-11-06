@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: Montserrat, sans-serif;
+}
+
+header {
+  background-color: #64768e;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+main {
+  display: flex;
+  background-size: 2960px;
+  height: 100vh;
+  color: rgb(0, 49, 92);
+  min-height: 500px;
+  font-family: "Montserrat";
+  background-image: url("assets/citi.jpg"); /* Caminho para a imagem */
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  align-items: flex-end;
+  margin-top: 250px;
+}
+.text-1 {
+  font-size: 27px;
+}
+.text-2 {
+  font-size: 75px;
+  font-weight: 500;
+}
