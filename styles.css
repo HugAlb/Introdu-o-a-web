@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -33,6 +35,30 @@ header {
   height: 30px;
 }
 
+header {
+  background-color: #3cd062;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
 main {
   display: flex;
   background-size: 2960px;
@@ -40,6 +66,7 @@ main {
   color: rgb(0, 49, 92);
   min-height: 500px;
   font-family: "Montserrat";
+  background-size: cover;
   background-image: url("assets/citi.jpg"); /* Caminho para a imagem */
 }
 
@@ -56,4 +83,91 @@ main {
 .text-2 {
   font-size: 75px;
   font-weight: 500;
+}
+.About {
+  display: flex;
+  padding: 0px 100px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 100px;
+  img {
+    width: 600px;
+    height: 380px;
+  }
+
+  .About-Content {
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+    row-gap: 15px;
+  }
+}
+
+h2 {
+  font-family: "Volkhov", serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.Content-Img {
+  width: 450px;
+  border-radius: 10px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.About-Text {
+  font-size: 14px;
+}
+#Sobre-nos {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: #3ed265;
+}
+.About-Button {
+  background-color: #3ed265;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 170px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 0px;
+}
+.Membros-Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.Membros {
+  margin-top: 150px;
+}
+.Membro{
+  display: flex;
+  overflow: hidden;
+}
+.Grid {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: grid;
+  padding: 0px 130px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  gap: 30px;
+  width: 100%;
+}
+#Destaque-Grid{
+  grid-row: 1 / 3;
+  grid-column: 3;
 }
